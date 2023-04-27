@@ -59,7 +59,7 @@ public class Test {
 //        B b = new B();
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("test.xml");
-        Student bean = context.getBean(Student.class);
+        Person bean = context.getBean(Person.class);
         context.close();
 
         //想通过student获取其他bean对象怎么办？
